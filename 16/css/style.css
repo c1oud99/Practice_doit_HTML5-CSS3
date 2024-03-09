@@ -65,3 +65,31 @@ footer p {
   text-align:center;
    line-height:200px;
 }
+
+@media all and (min-width:768px) {
+  #menus {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #menu1, #menu2, #menu3, #menu4 {
+    width: 49%;
+  }
+  #menu5 {
+    width: 100%;
+  }
+}
+
+@media all and (min-width:992px) {
+  #menu1, #menu2, #menu3, #menu4, #menu5 {
+    width: 33%;
+  }
+  #menu5 {
+    margin-left: 0.5%;
+    -ms-flex: 2 2 0;
+    -webkit-flex: 2 2 0;
+    flex: 2 2 0;
+  }
+}
